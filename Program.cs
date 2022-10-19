@@ -3,16 +3,18 @@
 // adding numbers
 // you give me two numbers I add two numbers 
 Console.Clear();
-bool validation = true;
-double idk=0;
 Console.WriteLine("we are going to add two numbers.");
 string Num1 = "";
 string Num2 = "";
 Double number1 = 0;
+double idk=0;
+bool validation = true;
 bool playing = true;
 
 while(playing == true)
 {
+playing = true;
+
 validation = true;
 while(validation == true){
 Console.WriteLine("Enter your first number now");
@@ -25,7 +27,6 @@ Num1 = Console.ReadLine();
     }
 }
         number1 = Convert.ToDouble(Num1);
-
         validation = true;
 
 while(validation == true){
@@ -43,6 +44,8 @@ Num2 = Console.ReadLine();
 Double number2 = Convert.ToDouble(Num2);
 
 Console.WriteLine("Your sum is:" + (number1 + number2));
+
+//------
 
 bool yessir = true;
 Console.WriteLine($"want to play again");
